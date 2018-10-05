@@ -1,0 +1,25 @@
+class complex:
+    real = 0
+    img = 0
+
+    def input(self):
+         self.real = int(input("enter the real value"))
+         self.img = int(input("enter the img part"))
+    def sum(self,c,c1):
+        self.real = c.real + c1.real
+        self.img = c.img + c1.img
+
+    def display(self):
+        print(self.real,"+",self.img,"i")
+
+
+c = complex()
+c1 = complex()
+add = complex()
+
+c.input()
+c1.input()
+add.sum(c,c1)
+add.display()
+
+
